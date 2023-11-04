@@ -1,0 +1,172 @@
+*{
+  
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'El Messiri', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+:root{
+    --pmc-mr:#ffffff;
+    --pmc-hr:#0ef;
+    --pmc-ba:#0e122b;
+    --pmc-ho:#101010;
+    --pmc-na:#909090;
+    
+
+    
+}
+
+
+
+
+body{
+    
+    color:var(--pmc-mr);
+   
+    
+    width: 100vh;
+    height: 100%;
+    background-color:var(--pmc-ba); 
+     
+}
+
+
+
+a{
+    color: var(--pmc-mr);
+}
+
+
+
+.nav {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 35px;
+   
+}
+ 
+
+.nav a{
+    position: relative;
+    left: 1000px;
+    text-transform: capitalize;
+    transition: 0.3s;
+    padding: 0 10px;
+    
+    
+    
+}
+
+ a::before{
+
+     content:'' ;
+     position: absolute;
+     left: 0;
+     height: 3px;
+     width: 0;
+     background-color: var(--pmc-hr);
+     bottom: -7px;
+     transition: 0.3s;
+    
+}
+
+
+a:hover::before{
+    width: 100%;
+
+}
+
+
+.logo{
+    position: absolute;
+    left: 150px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+    
+
+span{
+    color: var(--pmc-hr);
+}
+
+
+
+.moha{
+    position: relative;
+    left:750px;
+    top: 325px;
+}
+
+h3{
+    position: absolute;
+    margin-left: 865px;
+    margin-top: 260px;
+    font-size: 30px;
+    
+}
+
+
+.email{
+    width: 300px;
+    padding: 8px 5px;
+    background: transparent;
+    color:var(--pmc-mr);
+    
+}
+ 
+
+   
+
+.password{
+    position: absolute;
+    top: 40px;
+    width: 300px;
+    padding: 8px 5px;
+    background: transparent;
+    color:var(--pmc-mr);
+}
+
+.bt{
+    
+    position: absolute;
+    left: 120px;
+    top: 100px;
+    border: none;
+    outline: 0;
+    font-size: 25px;
+    border-radius: 4px;
+    outline: 0;
+    background: var(--pmc-na);
+    color:var(--pmc-mr);
+
+}
+
+.bt:hover{ 
+    background-color: var(--pmc-hr);
+    transition: 1s;
+    
+}
+
+
+.name{
+
+    position: absolute;
+    left: 750px;
+    top: 600px;
+    font-size: 20px;
+
+}
+
+

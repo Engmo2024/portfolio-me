@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'El Messiri', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+scroll-behavior: smooth;
+
+
+}
+
+:root{
+    --pmc-mr:#ffffff;
+    --pmc-hr:#0ef;
+    --pmc-ba:#0e122b;
+    --pmc-na:#909090;
+    --pmc-bt:#101010;
+    
+}
+
+
+
+
+body{
+    
+    color:var(--pmc-mr);
+   
+    
+    width: 100vh;
+    height: 100%;
+    background-color:var(--pmc-ba); 
+     
+}
+
+
+
+a{
+    color: var(--pmc-mr);
+}
+
+
+
+.nav {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 35px;
+   
+}
+ 
+
+.nav a{
+    position: relative;
+    left: 1000px;
+    text-transform: capitalize;
+    transition: 0.3s;
+    padding: 0 10px;
+    
+    
+    
+    
+}
+
+ a::before{
+
+     content:'' ;
+     position: absolute;
+     left: 0;
+     height: 3px;
+     width: 0;
+     background-color: var(--pmc-hr);
+     bottom: -7px;
+     transition: 0.3s;
+    
+}
+
+
+
+a:hover::before{
+    width: 100%;
+    
+
+}
+
+
+.logo{
+    position: absolute;
+    left: 150px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+    
+
+
+
+
+.content{
+    position: relative;
+    margin-left:15%;
+    margin-top: 25%;
+    
+}
+
+
+
+.name{
+    font-size: 40px;
+    cursor: pointer;
+}
+
+nav{
+    font-size: 17px;
+}
+
+
+.name2{
+    color:var(--pmc-hr) ;
+
+}
+
+span{
+    color: var(--pmc-hr);
+}
+
+.icons{
+    position: absolute;
+    left: 195px;
+    top: 590px;
+    font-size: 30px;
+}
+
+.icons a:hover{
+     color: var(--pmc-mr);
+    background-color: transparent;
+}
+
+
+.icons :hover{
+    color: var(--pmc-hr);
+    transition: 1s ease;
+} 
+
+
+img{
+    position: relative;
+    left: 1000px;
+    bottom:450px;
+    
+    
+}
+
+.bt{
+    position: absolute;
+    left: 10%;
+    top: 55%;
+   
+    
+}
+ button{
+    background-color: var(--pmc-na);
+    color: var(--pmc-bt);
+    font-size: 25px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    
+ }
+
+
+ button:hover{
+    transition: 0.3;
+     background-color: var(--pmc-hr);
+ }
